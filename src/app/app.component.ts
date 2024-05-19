@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from "./components/components/login/login.component";
 import { ReactiveFormsModule } from '@angular/forms';
+import { SidebarModule } from 'primeng/sidebar';
+
 
 
 @Component({
@@ -12,7 +14,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     imports: [
       RouterOutlet, 
       LoginComponent, 
-      ReactiveFormsModule, 
+      ReactiveFormsModule,
+      SidebarModule,
+      
      
     
     ]

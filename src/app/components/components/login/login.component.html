@@ -13,7 +13,7 @@
         <h3>Preencha o formulario</h3>
         <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
             <input type="text" formControlName="matricula" placeholder="Informe sua matricula">
-            <input class="password" type="{{ isPasswordVisible['senha'] ? 'text' : 'password' }}" formControlName="senha" id="senha">
+            <input class="password" type="{{ isPasswordVisible['senha'] ? 'text' : 'password' }}" formControlName="password" id="senha">
             <img [src]="isPasswordVisible['senha'] ?'assets/image/olho1.png' : 'assets/image/olho.png'" alt="Mostrae/Ocultar senha" id="TogglePassword" (click)="togglePasswordVisibility('senha')"> 
             <button type="submit" (click)="onEntrarClick()"> entrar</button>      
         </form>    

@@ -12,6 +12,14 @@
             shape="circle" /> 
 
     </header>
+
+    <div class="card flex justify-content-center">
+      <p-sidebar [(visible)]="sidebarVisible">
+          <h3>Sidebar</h3>
+          
+      </p-sidebar>
+      <p-button (click)="sidebarVisible = true" class="mr-2" icon="pi pi-arrow-right" />
+  </div>
     <section>
 
     </section>
