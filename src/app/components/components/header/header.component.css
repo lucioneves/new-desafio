@@ -1,0 +1,13 @@
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(15, 128, 0, 0.877);
+    display: flex;
+}
+
+
+.space{
+    text-align: center;
+    padding:  20px;
+    justify-content: center;
+}
