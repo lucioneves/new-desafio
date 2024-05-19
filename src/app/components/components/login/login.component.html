@@ -11,10 +11,11 @@
 
     <div class="right">
         <h3>Preencha o formulario</h3>
-        <input type="text" name="matricula" id="matricula" placeholder="Informe sua matricula" required>
-        <input type="password" name="password" id="password" placeholder="Senha" required>
-        <img src="assets/image/olho1.png" alt="Mostrae/Ocultar senha" id="TogglePassword"> 
-        <input type="button" value="ENTRAR">       
-        
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <input type="text" formControlName="matricula" placeholder="Informe sua matricula">
+            <input class="password" type="{{ isPasswordVisible['senha'] ? 'text' : 'password' }}" formControlName="senha" id="senha">
+            <img [src]="isPasswordVisible['senha'] ?'assets/image/olho1.png' : 'assets/image/olho.png'" alt="Mostrae/Ocultar senha" id="TogglePassword" (click)="togglePasswordVisibility('senha')"> 
+            <button type="submit" (click)="onEntrarClick()"> entrar</button>      
+        </form>    
     </div>
 </section>
