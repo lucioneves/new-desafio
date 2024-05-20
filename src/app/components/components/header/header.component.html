@@ -1,10 +1,11 @@
 <div>
     <header class="header">
       <h3> TUTY <br> ACADEMY</h3>     
-        <th class="space">Cursos</th>
+        <th class="space" [routerLink]="['/login']">Home</th>
+        <th class="space" [routerLink]="['/envet']">Cursos</th>
         <th class="space">Carreira Nacional</th>
         <th class="space">Vagas Internas</th>
-        <i class="pi pi-bell" style="color: red"></i>
+        <th class="space">Sair</th>
         <p-avatar 
             image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
             styleClass="mr-2" 
@@ -13,25 +14,10 @@
 
     </header>
 
-  <div class="container">
-    <nav class="navbar">
-      <ul>
-        <li><i class="pi pi-home"></i><a href="default.asp">HOME</a></li>
-        <li><i class="pi pi-desktop"></i><a href="news.asp">CURSOS</a></li>
-        <li><i class="pi pi-calendar-minus"></i><a href="contact.asp">EVENTOS</a></li>
-        <li><i class="pi pi-arrow-left"></i><a href="about.asp">SAIR</a></li>
-      </ul> 
-  
-    </nav>
-  
+  <div class="container">  
     
     <section>
       <div class="content">
-        <div class="search">
-         
-          <input type="search" name="pesquisar" id="pesquisar" placeholder="Seja bem vindo ">
-           <i class="pi pi-comments"></i>
-        </div>
   
         <div class="coletion">
   

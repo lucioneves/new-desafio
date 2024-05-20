@@ -1,17 +1,26 @@
 .header{
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background-color: #9ccc35;
     display: flex;
     font-family: Georgia, serif;
     align-items: center;
-}    
+}
+.p-element{
+    position: absolute;
+    align-items: center;
+    right: 30px;  
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
 
 .space{
     text-align: center;
     padding:  20px;
     justify-content: center;
-    cursor: pointer;
 }
 
 .navbar ul{
@@ -42,4 +51,29 @@
     border: 1px solid #555;
     
 }
+.left{
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+}
 
+.video-container{
+    text-align: center;
+    border: 1px solid #555;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+   
+
+}
+
+.video-container h3{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.coletion{
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+}

@@ -4,6 +4,7 @@ import { LoginComponent } from "./components/components/login/login.component";
 import { ReactiveFormsModule } from '@angular/forms';
 import { MenuModule } from 'primeng/menu';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -16,6 +17,8 @@ import { CommonModule } from '@angular/common';
       ReactiveFormsModule,
       MenuModule,
       CommonModule,
+      RouterModule,
+      
 
     ]
 })
