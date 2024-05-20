@@ -13,14 +13,40 @@
 
     </header>
 
-    <div class="card flex justify-content-center">
-      <p-sidebar [(visible)]="sidebarVisible">
-          <h3>Sidebar</h3>
-          
-      </p-sidebar>
-      <p-button (click)="sidebarVisible = true" class="mr-2" icon="pi pi-arrow-right" />
-  </div>
+  <div class="container">
+    <nav class="navbar">
+      <ul>
+        <li><i class="pi pi-home"></i><a href="default.asp">HOME</a></li>
+        <li><i class="pi pi-desktop"></i><a href="news.asp">CURSOS</a></li>
+        <li><i class="pi pi-calendar-minus"></i><a href="contact.asp">EVENTOS</a></li>
+        <li><i class="pi pi-arrow-left"></i><a href="about.asp">SAIR</a></li>
+      </ul> 
+  
+    </nav>
+  
+    
     <section>
+      <div class="content">
+        <div class="search">
+         
+          <input type="search" name="pesquisar" id="pesquisar" placeholder="Seja bem vindo ">
+           <i class="pi pi-comments"></i>
+        </div>
+  
+        <div class="coletion">
+  
+        </div>
+  
+        <div class="left">
+          <p>brasil</p>
 
+        </div>
+  
+        <div class="right">
+           <p>Sija bem vindo</p>
+        </div>
+      </div>
+      
     </section>
+  </div> 
 </div>
