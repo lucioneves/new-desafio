@@ -5,6 +5,7 @@
     display: flex;
     font-family: Georgia, serif;
     align-items: center;
+    cursor: pointer;
 }
 .p-element{
     position: absolute;

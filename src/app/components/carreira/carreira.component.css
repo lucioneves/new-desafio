@@ -1,0 +1,25 @@
+.header{
+    width: 100vw;
+    height: 100px;
+    background-color: #9ccc35;
+    display: flex;
+    font-family: Georgia, serif;
+    align-items: center;
+    cursor: pointer;
+}
+.p-element{
+    position: absolute;
+    align-items: center;
+    right: 30px;  
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.space{
+    text-align: center;
+    padding:  20px;
+    justify-content: center;
+}

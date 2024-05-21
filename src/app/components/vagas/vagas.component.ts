@@ -3,22 +3,20 @@ import { AvatarModule } from 'primeng/avatar';
 import { Router, RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-envent',
+  selector: 'app-vagas',
   standalone: true,
   imports: [AvatarModule, RouterModule],
-  templateUrl: './envent.component.html',
-  styleUrl: './envent.component.css'
+  templateUrl: './vagas.component.html',
+  styleUrl: './vagas.component.css'
 })
-export class EnventComponent implements OnInit{
-
+export class VagasComponent implements OnInit{
   constructor(private router: Router) {}
+
   ngOnInit(): void {
     
   }
 
   redirectToAppEvent() {
-    this.router.navigate(['/carreira'])
+    this.router.navigate(['/vagas'])
   }
-
-
 }
