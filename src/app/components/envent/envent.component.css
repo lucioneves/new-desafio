@@ -23,43 +23,22 @@ img{
     justify-content: center;
 }
 
-.navbar ul{
-    list-style-type: none;
-    padding: 10px;
-}
-
-.navbar li {
-    display: flex; 
-    margin-bottom: 40px;
-}
-
-.navbar{
-    width: 250px;
-    height: 500px;
-    border: 1px solid #555;
-}
-
 .container{   
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    border: 1px solid #555;
+    width: 100%;
+    background-color:whitesmoke;
 }
 
-.search{
-    width: 50vw;
-    border: 1px solid #555;
-    
-}
+
 .left{
     display: flex;
-    gap: 50px;
+    gap: 100px;
     padding: 50px;
 }
 
 .video-container{
     text-align: center;
-    border: 1px solid #555;
+    border: 0.5px solid #555;
     cursor: pointer;
     border-radius: 5px;
     position: relative;
@@ -74,6 +53,6 @@ img{
 
 .coletion{
     display: flex;
-    gap: 50px;
+    gap: 100px;
     padding: 50px;
 }

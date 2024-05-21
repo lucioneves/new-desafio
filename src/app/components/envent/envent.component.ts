@@ -17,7 +17,7 @@ export class EnventComponent implements OnInit{
   }
 
   redirectToAppEvent() {
-    this.router.navigate(['/login'])
+    this.router.navigate(['/header'])
   }
 
 
