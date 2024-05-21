@@ -23,3 +23,28 @@ img{
     padding:  20px;
     justify-content: center;
 }
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    width: 50%;
+    border: 1px solid black;
+}
+
+.left img {
+    width: 100%; 
+    height: auto;
+}
+
+.right{
+    width: 50%;
+    border: 1px solid black;
+}

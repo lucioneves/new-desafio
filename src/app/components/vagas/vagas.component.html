@@ -12,14 +12,62 @@
               size="xlarge" 
               shape="circle" /> 
   
-      </header>
+    </header>
 
-      <div>
+    <div class="container">
         <section>
-            <div>
-                <h1>EM BREVE</h1>
+          <div class="content">  
+            <div class="left">
+               <img class="vagas" src="assets/image/vagas.png" alt="">
             </div>
+
+           <div class="right">
+            <form [formGroup]="formulario" (ngSubmit)="onSubmit()" class="form-column">
+                <div class="form-group">
+                    <input type="text" formControlName="nome" placeholder="Informe seu nome">
+                    <div *ngIf="formulario.get('nome')?.invalid && formulario.get('nome')?.touched">
+                        <small *ngIf="formulario.get('nome')?.errors?.['required']">Nome é obrigatório.</small>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" formControlName="matricula" placeholder="Informe sua matrícula">
+                    <div *ngIf="formulario.get('matricula')?.invalid && formulario.get('matricula')?.touched">
+                        <small *ngIf="formulario.get('matricula')?.errors?.['required']">Matrícula é obrigatória.</small>
+                        <small *ngIf="formulario.get('matricula')?.errors?.['pattern']">Matrícula deve conter apenas números.</small>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" formControlName="telefone" placeholder="Informe seu telefone">
+                    <div *ngIf="formulario.get('telefone')?.invalid && formulario.get('telefone')?.touched">
+                        <small *ngIf="formulario.get('telefone')?.errors?.['required']">Telefone é obrigatório.</small>
+                        <small *ngIf="formulario.get('telefone')?.errors?.['pattern']">Telefone inválido.</small>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" formControlName="email" placeholder="Informe seu e-mail">
+                    <div *ngIf="formulario.get('email')?.invalid && formulario.get('email')?.touched">
+                        <small *ngIf="formulario.get('email')?.errors?.['required']">E-mail é obrigatório.</small>
+                        <small *ngIf="formulario.get('email')?.errors?.['email']">E-mail inválido.</small>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="file" formControlName="curriculo">
+                    <div *ngIf="formulario.get('curriculo')?.invalid && formulario.get('curriculo')?.touched">
+                        <small *ngIf="formulario.get('curriculo')?.errors?.['required']">Currículo é obrigatório.</small>
+                    </div>
+                </div>
+                
+                
+            </form>
+            
+      
+             </div>
+           </div>  
         </section>
-      </div>
+    </div>
   
 </div>
