@@ -15,7 +15,7 @@
     </header>
 
     <div class="container">
-        <section>
+       
           <div class="content">  
             <div class="left">
                <img class="vagas" src="assets/image/vagas.png" alt="">
@@ -60,14 +60,16 @@
                         <small *ngIf="formulario.get('curriculo')?.errors?.['required']">Currículo é obrigatório.</small>
                     </div>
                 </div>
-                
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
                 
             </form>
             
       
              </div>
            </div>  
-        </section>
+    
     </div>
   
 </div>
