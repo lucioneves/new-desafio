@@ -5,6 +5,7 @@
     display: flex;
     font-family: Georgia, serif;
     align-items: center;
+  
 }    
 
 .space{
@@ -14,32 +15,48 @@
     cursor: pointer;
 }
 
-.navbar ul{
-    list-style-type: none;
-    padding: 10px;
+.container {
+    width: 100%;
+    background-color: #9ccc35;
 }
 
-.navbar li {
-    display: flex; 
-    margin-bottom: 40px;
-}
-
-.navbar{
-    width: 250px;
-    height: 500px;
-    border: 1px solid #555;
-}
-
-.container{   
+.content{
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    border: 1px solid #555;
+    justify-content: space-between;
 }
 
-.search{
-    width: 50vw;
-    border: 1px solid #555;
+.logo2{
+    width: 100px;
+    height: 100px;
+}
+
+.p-element{
+    position: absolute;
+    align-items: center;
+    right: 30px;  
+}
+
+.left {
+    position: relative; 
+    text-align: center; 
+    padding-left: 60px;
     
 }
+
+.left h3 {
+    position: absolute;
+    top: 10%; 
+    left: 50%;
+    transform: translateX(-50%);    
+    font-size: 25px;
+    font-family: 'normal';
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.left img {
+    width: 100%; 
+    height: auto;
+}
+
 

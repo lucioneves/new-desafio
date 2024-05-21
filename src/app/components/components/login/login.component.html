@@ -1,21 +1,35 @@
 <header>
-    <h2>T</h2>
-    <p>TUTIPLAST</p>
+    <img class="logo" src="assets/image/logo.jpg" alt="">
 </header>
 <section class="container">
-    <div class="left">
-        <p>Seja bem vindo a plataforma <br>
-           de cursos da TUTIPLAST</p>
-
+   <div class="left">
+       <img class="home" src="assets/image/home1.jpg" alt="">
     </div>
 
     <div class="right">
-        <h3>Preencha o formulario</h3>
-        <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
-            <input type="text" formControlName="matricula" placeholder="Informe sua matricula">
-            <input class="password" type="{{ isPasswordVisible['senha'] ? 'text' : 'password' }}" formControlName="password" id="senha">
-            <img [src]="isPasswordVisible['senha'] ?'assets/image/olho1.png' : 'assets/image/olho.png'" alt="Mostrae/Ocultar senha" id="TogglePassword" (click)="togglePasswordVisibility('senha')"> 
-            <button type="submit" (click)="onEntrarClick()"> entrar</button>      
-        </form>    
+        <img class="logo2" src="assets/image/logo2.jpg" alt="">
+        <h3>Faça o seu login</h3>
+        <form [formGroup]="formulario" (ngSubmit)="onSubmit()" class="form-column">
+            <div class="form-group">
+                <input type="text" formControlName="matricula" placeholder="Informe sua matricula">
+                <div *ngIf="formulario.get('matricula')?.invalid && formulario.get('matricula')?.touched">
+                    <small *ngIf="formulario.get('matricula')?.errors?.['required']">Matrícula é obrigatória.</small>
+                    <small *ngIf="formulario.get('matricula')?.errors?.['pattern']">Matrícula deve conter apenas números.</small>
+                </div>
+            </div>
+            <div class="form-group password-group">
+                <input class="password" type="{{ isPasswordVisible['senha'] ? 'text' : 'password' }}" formControlName="password" id="senha" placeholder="Senha">
+                <img [src]="isPasswordVisible['senha'] ? 'assets/image/olho1.png' : 'assets/image/olho.png'" alt="Mostrar/Ocultar senha" id="TogglePassword" (click)="togglePasswordVisibility('senha')"> 
+                <div *ngIf="formulario.get('password')?.invalid && formulario.get('password')?.touched">
+                    <small *ngIf="formulario.get('password')?.errors?.['required']">Senha é obrigatória.</small>
+                    <small *ngIf="formulario.get('password')?.errors?.['minlength']">Senha deve ter no mínimo 8 caracteres.</small>
+                    
+                  </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" (click)="onEntrarClick()">ENTRAR</button>
+            </div>      
+        </form>
+         
     </div>
 </section>

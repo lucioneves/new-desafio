@@ -1,44 +1,123 @@
 header{
     display: flex;
     width: 100%;
-    height: 70px;
-    background-color: chartreuse;
+    height: 100px;
+    background-color: #9ccc35;    
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.logo2{
+    width: 170px;
+    height: 170px;
 }
 
 .container{
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    
-    
+    background-color: #9ccc35;
 }
 
 .left{
-    width: 30%;
-    float: left;
-    border: 1px solid #555;
+    width: 50%;
+    float: left;  
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-
+.home{
+    width: 80%; 
+    align-items: center; 
+    
+}
 .right{
-    width: 30%;
-    float: right;
-    border: 1px solid #555;
+    width: 50%;
+    float: right;    
     text-align: center;
     flex-direction: column;
     gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 img{
     width: 20px;
-    height: 25;
+    height: 25;    
 }
 
 input{
-    width: 300px;
+    width: 320px;
     height: 40px;
+    border-radius: 10px;
+    border: 2px solid #555;
+    padding-left: 10px;
+}
+.form-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px; 
+}
+
+.form-group {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.password-group {
+    position: relative;
+    width: 100%; 
+}
+
+.password-group input {
+    width: 96%; 
+    padding-right: 0px; 
+    
+}
+
+.password-group img {
+    position: absolute;
+    right: 10px; 
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%); 
+    cursor: pointer; 
+}
+
+small {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.password {
+    margin-right: 1px; 
+}
+
+.form-group button {
+    align-self: center; 
+    width: 330px;
+    height: 40px;
+    border-radius: 5px;
+    background: #9ccc35;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Lato,Regular', sans-serif;
+    color: white;
+    border: none;
+}
+
+.form-group button:hover{
+    background: #9bda0a;
     
 }
